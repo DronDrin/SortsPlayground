@@ -1,7 +1,6 @@
 import java.lang.StrictMath.ceilDiv
-import java.util.ArrayList
+import java.util.*
 import java.util.Comparator.comparingInt
-import java.util.LinkedList
 import kotlin.Int.Companion.MAX_VALUE
 
 class Sorts {
@@ -12,3 +11,6 @@ class Sorts {
 
     fun selectionSort(input: List<Int>): List<Int> = ArrayList(input).run { (0..<size).map { min().also(::remove) } }
 }
+
+// template for sort:
+// fun Sort(input: List<Int>): List<Int> =
